@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>coolors clone</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <!-- Mobile Navbar -->
+    <header
+      class="md:hidden fixed top-0 z-50 bg-white w-screen py-5 border-b-[1px] flex justify-center"
+    >
+      <button class="absolute text-xl -translate-y-1/2 top-1/2 left-4">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#">
+        <img src="./img/logo.svg" alt="coolor logo" />
+      </a>
+    </header>
+    <!-- end Mobile navbar -->
+    <!-- Big navbar -->
+    <header
+      class="hidden md:flex justify-between items-center py-3 px-6 border-b-[1.5px]"
+    >
+      <div class="flex items-center gap-5">
+        <a href="#">
+          <img src="./img/logo.svg" alt="coolor logo" />
+        </a>
+        <a href="#" class="hidden gap-3 group lg:flex">
+          <div
+            class="flex items-center justify-center border-2 border-gray-200 rounded-sm group-hover:border-gray-300 size-8"
+          >
+            <i class="text-orange-500 fa-solid fa-cloud-bolt"></i>
+          </div>
+          <p class="text-[12px] leading-4 text-gray-600">
+            <span class="font-bold text-black">Chatbolt.ai</span> Create your
+            own ChatGPT chatbot trained <br />
+            with your data from any file or website.
+            <span class="text-blue-500 group-hover:underline"
+              >Try it for free</span
+            >
+          </p>
+        </a>
+      </div>
+      <ul class="flex items-center gap-5 cursor-pointer">
+        <li class="hover:text-blue-500">Tools</li>
+        <li class="text-pink-500 hover:text-green-500">
+          <a href="#">Go Pro</a>
+        </li>
+        <li class="w-[0.7px] h-9 bg-gray-300"></li>
+        <li class="hover:text-blue-500"><a href="#">Sing in</a></li>
+        <li>
+          <a
+            href="#"
+            class="bg-blue-500 hover:bg-blue-600 text-white py-[10px] px-3 rounded-lg"
+            >Sign up</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <!-- end big navbar -->
+    <!-- Hero section -->
+    <section
+      class="mt-24 grid gap-8 md:gap-0 md:grid-cols-[45%,55%] overflow-hidden"
+    >
+      <div class="md:w-[1000px] md:order-2">
+        <img class="md:hidden" src="img/small-banner.png" alt="banner" />
+        <img
+          class="hidden w-full md:inline-block"
+          src="img/big-banner.png"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-col items-center text-center gap-7">
+        <h1 class="text-5xl font-extrabold lg:text-7xl">
+          The super fast <br />
+          color palettes <br />
+          generator!
+        </h1>
+        <p>
+          Create the perfect palette or get inspired by <br />
+          thousands of beautiful color schemes.
+        </p>
+        <div class="flex flex-col items-center gap-2">
+          <button
+            class="py-3 font-semibold text-white bg-blue-500 rounded-lg w-60 hover:bg-blue-600"
+          >
+            Start the generator
+          </button>
+          <button
+            class="py-3 font-semibold border-2 rounded-lg hover:border-gray-300 w-60"
+          >
+            Expore Tranding Pallete
+          </button>
+        </div>
+
+        <div
+          class="flex justify-center items-center gap-3 py-1 px-4 border-[1px] rounded-xl border-orange-500"
+        >
+          <span class="text-3xl text-yellow-500"
+            ><i class="fa-solid fa-trophy"></i
+          ></span>
+          <div class="text-left text-orange-500">
+            <span class="text-[11px] uppercase">Product Hunt</span>
+            <h5 class="font-bold">#1 Product of the month</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end hero section -->
+    <!-- Plateform used -->
+    <section class="p-4 mt-16">
+      <div
+        class="flex gap-5 flex-wrap *:grow md:*:basis-2/5 lg:*:basis-1/4 xl:*:basis-auto xl:flex-nowrap"
+      >
+        <a
+          href="#"
+          class="relative block p-20 overflow-hidden text-center transition bg-gray-100 cursor-pointer group xl:p-6 hover:bg-sky-100 rounded-2xl"
+        >
+          <div class="transition md:group-hover:opacity-0">
+            <span class="text-6xl"><i class="fa-brands fa-apple"></i></span>
+            <h3 class="m-3 text-3xl font-extrabold xl:text-2xl">iOS App</h3>
+            <p class="text-gray-500">
+              Create, browse and save palettes on the go.
+            </p>
+          </div>
+          <h4
+            class="hidden md:block text-sky-500 opacity-0 group-hover:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[170px] group-hover:-translate-y-1/2 transition ease-in-out duration-[200ms] text-3xl font-extrabold"
+          >
+            View on the App Store
+          </h4>
+        </a>
+        <a
+          href="#"
+          class="relative block p-20 overflow-hidden text-center transition bg-gray-100 cursor-pointer group xl:p-6 hover:bg-sky-100 rounded-2xl"
+        >
+          <div class="transition md:group-hover:opacity-0">
+            <span class="text-6xl"><i class="fa-brands fa-android"></i></span>
+            <h3 class="m-3 text-3xl font-extrabold xl:text-2xl">Android App</h3>
+            <p class="text-gray-500">Thousands of palettes in your pocket.</p>
+          </div>
+          <h4
+            class="hidden md:block text-sky-500 opacity-0 group-hover:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[170px] group-hover:-translate-y-1/2 transition ease-in-out duration-[200ms] text-3xl font-extrabold"
+          >
+            View on the App Store
+          </h4>
+        </a>
+        <a
+          href="#"
+          class="relative block p-20 overflow-hidden text-center transition bg-gray-100 cursor-pointer group xl:p-6 hover:bg-sky-100 rounded-2xl"
+        >
+          <div class="transition md:group-hover:opacity-0">
+            <span class="text-6xl"><i class="fa-brands fa-figma"></i></span>
+            <h3 class="m-3 text-3xl font-extrabold xl:text-2xl">
+              Figma Plugin
+            </h3>
+            <p class="text-gray-500">All palettes right in your workspace.</p>
+          </div>
+          <h4
+            class="hidden md:block text-sky-500 opacity-0 group-hover:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[170px] group-hover:-translate-y-1/2 transition ease-in-out duration-[200ms] text-3xl font-extrabold"
+          >
+            Install Now
+          </h4>
+        </a>
+        <a
+          href="#"
+          class="relative block p-20 overflow-hidden text-center transition bg-gray-100 cursor-pointer group xl:p-6 hover:bg-sky-100 rounded-2xl"
+        >
+          <div class="transition md:group-hover:opacity-0">
+            <span class="text-6xl"><i class="fa-brands fa-chrome"></i></span>
+            <h3 class="m-3 text-3xl font-extrabold xl:text-2xl">
+              Chrome Extension
+            </h3>
+            <p class="text-gray-500">Get and edit a palette every new tab.</p>
+          </div>
+          <h4
+            class="hidden md:block text-sky-500 opacity-0 group-hover:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[170px] group-hover:-translate-y-1/2 transition ease-in-out duration-[200ms] text-3xl font-extrabold"
+          >
+            Add to Chrome
+          </h4>
+        </a>
+        <a
+          href="#"
+          class="relative block p-20 overflow-hidden text-center transition bg-gray-100 cursor-pointer group xl:p-6 hover:bg-sky-100 rounded-2xl"
+        >
+          <div class="transition md:group-hover:opacity-0">
+            <span class="text-6xl"><i class="fa-brands fa-adn"></i></span>
+            <h3 class="m-3 text-3xl font-extrabold xl:text-2xl">
+              Adobe Extension
+            </h3>
+            <p class="text-gray-500">Use Coolors with your favorite tools.</p>
+          </div>
+          <h4
+            class="hidden md:block text-sky-500 opacity-0 group-hover:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[170px] group-hover:-translate-y-1/2 transition ease-in-out duration-[200ms] text-3xl font-extrabold"
+          >
+            Download
+          </h4>
+        </a>
+      </div>
+    </section>
+    <!-- end Plateform used -->
+    <!-- Top company -->
+    <section class="px-5 my-32">
+      <p class="mb-16 text-xl text-center">
+        Used by 5+ million designers and by top companies
+      </p>
+      <div class="flex flex-wrap justify-center gap-9">
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/disney.svg"
+          alt=""
+        />
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/dreamwork.svg"
+          alt=""
+        />
+        <img
+          class="w-16 transition cursor-pointer hover:scale-125"
+          src="img/companies/warnerbros.svg"
+          alt=""
+        />
+        <img
+          class="w-16 transition cursor-pointer hover:scale-125"
+          src="img/companies/netflex.svg"
+          alt=""
+        />
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/airbnb.svg"
+          alt=""
+        />
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/dropbox.svg"
+          alt=""
+        />
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/hasbro.svg"
+          alt=""
+        />
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/ubisoft.svg"
+          alt=""
+        />
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/ea.svg"
+          alt=""
+        />
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/apple.svg"
+          alt=""
+        />
+        <img
+          class="w-20 transition cursor-pointer hover:scale-125"
+          src="img/companies/microsoft.svg"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- end top company -->
+    <!-- Footer -->
+    <footer class="p-10 bg-gray-100 mt-7">
+      <div
+        class="grid text-center gap-7 md:grid-cols-3 lg:grid-cols-4 md:text-left"
+      >
+        <div>
+          <h3 class="text-3xl font-bold mb-7">Tools</h3>
+          <ul>
+            <li
+              class="mt-2 flex justify-center md:justify-start items-center gap-2 after:content-['NEW'] after:text-red-500 after:text-[10px] after:rounded-[3px] after:font-semibold after:px-1 after:bg-red-50"
+            >
+              <a class="transition hover:text-blue-500" href="#"
+                >Generate Your pallete</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Explore popular palettes</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Extract palette from image</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Contrast checker</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Preview palettes on designs</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Recolor your own design</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Color picker</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Browse free fonts</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold mb-7">More</h3>
+          <ul>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >List of colors</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Browse gradients</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Create a gradient</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Make a gradient palette</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Image converter</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Create a collage</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Font Generator</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="mb-5">
+            <h3 class="text-3xl font-bold mb-7">Jobs</h3>
+            <ul>
+              <li class="mt-2">
+                <a class="transition hover:text-blue-500" href="#"
+                  >Find your next job</a
+                >
+              </li>
+              <li class="mt-2">
+                <a class="transition hover:text-blue-500" href="#"
+                  >Post a job</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold mb-7">Apps</h3>
+            <ul>
+              <li class="mt-2">
+                <a class="transition hover:text-blue-500" href="#">iOS App</a>
+              </li>
+              <li class="mt-2">
+                <a class="transition hover:text-blue-500" href="#"
+                  >Android App</a
+                >
+              </li>
+              <li class="mt-2">
+                <a class="transition hover:text-blue-500" href="#"
+                  >Figma Plugin</a
+                >
+              </li>
+              <li
+                class="mt-2 flex justify-center md:justify-start items-center gap-2 after:content-['NEW'] after:text-yellow-500 after:text-[10px] after:rounded-[3px] after:font-semibold after:px-1 after:bg-yellow-50"
+              >
+                <a class="transition hover:text-blue-500" href="#"
+                  >Adobe Extension</a
+                >
+              </li>
+              <li class="mt-2">
+                <a class="transition hover:text-blue-500" href="#"
+                  >Chrome Extension</a
+                >
+              </li>
+              <li class="mt-2">
+                <a class="transition hover:text-blue-500" href="#"
+                  >Instagram Page</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold mb-7">Company</h3>
+          <ul>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#">Pricing</a>
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#">License</a>
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Terms of service</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Privacy policy</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Cookie policy</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#"
+                >Manage cookies</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#">Help center</a>
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#">Advertise</a>
+            </li>
+            <li class="mt-2">
+              <a class="transition hover:text-blue-500" href="#">Affiliate</a>
+              <a class="transition hover:text-blue-500" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-10 justify-between items-center text-[16px] text-center pt-10 mt-10 border-t-2"
+      >
+        <p class="text-gray-500">
+          &copy; Coolors by
+          <a
+            href="#"
+            class="font-bold text-black transition hover:text-blue-500"
+            >Fabrizio Bianchi.</a
+          >
+          From a creative to all the others.
+        </p>
+        <div class="flex gap-4 text-2xl">
+          <a href="#" class="transition hover:text-blue-500"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="transition hover:text-blue-500"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="transition hover:text-blue-500"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+          <a href="#" class="transition hover:text-blue-500"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="transition hover:text-blue-500"
+            ><i class="fa-brands fa-product-hunt"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
